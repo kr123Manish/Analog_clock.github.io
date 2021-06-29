@@ -1,0 +1,61 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.clockContainer{
+    height:600px;
+    width:600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:url(alarm_clock.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    /*background-attachment: fixed;*/
+    
+}  
+
+
+#hour,#minute,#second{
+    position: absolute;;
+    border-radius:10px;
+    transform-origin: bottom;
+}
+#hour {
+    width:10px;
+    height:105px;
+    margin-top:-32px;
+    margin-left:5px;
+    background:black;
+}
+#minute{
+    width:5.5px;
+    height:140px;
+    margin-top:-73px;
+    margin-left:5px;
+    background:blue;
+}
+#second{
+    width:2px;
+    height:170px;
+    margin-top:-112px;
+    margin-left:5px;
+    background:red;
+}
+.clockContainer:after{
+    content: '';
+    border-radius:50%;
+    width: 17px;
+    height:17px;
+    margin-top:56px;
+    margin-left:4px;
+    background:red;
+    position: absolute;
+}
