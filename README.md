@@ -92,7 +92,7 @@ body{
     position: absolute;
 }
 ```
-## Javascript code
+## Javascript Code
 ```javascript
 setInterval(() => {
     date=new Date();
